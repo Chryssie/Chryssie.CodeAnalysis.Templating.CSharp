@@ -1,7 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <RootNamespace>Microsoft.CodeAnalysis.CSharp.Templating</RootNamespace>
+    <InternalsAssemblyNames>Microsoft.CodeAnalysis.CSharp;Microsoft.CodeAnalysis</InternalsAssemblyNames>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IgnoresAccessChecksToGenerator.IOD" Version="0.6.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Chryssie.CodeAnalysis.Templating.CSharp.UnitTests" />
+  </ItemGroup>
 
 </Project>
