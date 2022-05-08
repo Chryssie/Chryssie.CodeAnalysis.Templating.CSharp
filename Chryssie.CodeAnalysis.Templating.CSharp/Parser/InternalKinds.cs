@@ -5,17 +5,19 @@
 #nullable disable
 
 
+using Microsoft.CodeAnalysis.CSharp.Templating.Parser;
+
 namespace Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax;
 
 internal static class TemplatingKinds
 {
-    public const SyntaxKind TemplateDirectiveStartToken = (SyntaxKind)24059;
-    public const SyntaxKind TemplateDirectiveEndToken = TemplateDirectiveStartToken + 1;
+    public const SyntaxKind TemplateDirectiveStartToken = (SyntaxKind)TemplateSyntaxKind.DirectiveStartToken;
+    public const SyntaxKind TemplateDirectiveEndToken = (SyntaxKind)TemplateSyntaxKind.DirectiveEndToken;
 
-    public const SyntaxKind TemplateDirectiveStandardControlBlockStartToken = TemplateDirectiveEndToken + 1;
-    public const SyntaxKind TemplateDirectiveStandardControlBlockEndToken = TemplateDirectiveStandardControlBlockStartToken + 1;
-    public const SyntaxKind TemplateDirectiveExpressionControlBlockStartToken = TemplateDirectiveStandardControlBlockEndToken + 1;
-    public const SyntaxKind TemplateDirectiveExpressionControlBlockEndToken = TemplateDirectiveExpressionControlBlockStartToken + 1;
-    public const SyntaxKind TemplateDirectiveClassFeatureControlBlockStartToken = TemplateDirectiveExpressionControlBlockEndToken + 1;
-    public const SyntaxKind TemplateDirectiveClassFeatureControlBlockEndToken = TemplateDirectiveClassFeatureControlBlockStartToken + 1;
+    public const SyntaxKind TemplateStandardControlBlockStartToken = (SyntaxKind)TemplateSyntaxKind.StandardControlBlockStartToken;
+    public const SyntaxKind TemplateStandardControlBlockEndToken = (SyntaxKind)TemplateSyntaxKind.StandardControlBlockEndToken;
+    public const SyntaxKind TemplateExpressionControlBlockStartToken = (SyntaxKind)TemplateSyntaxKind.ExpressionControlBlockStartToken;
+    public const SyntaxKind TemplateExpressionControlBlockEndToken = (SyntaxKind)TemplateSyntaxKind.ExpressionControlBlockEndToken;
+    public const SyntaxKind TemplateClassFeatureControlBlockStartToken = (SyntaxKind)TemplateSyntaxKind.ClassFeatureControlBlockStartToken;
+    public const SyntaxKind TemplateClassFeatureControlBlockEndToken = (SyntaxKind)TemplateSyntaxKind.ClassFeatureControlBlockEndToken;
 }

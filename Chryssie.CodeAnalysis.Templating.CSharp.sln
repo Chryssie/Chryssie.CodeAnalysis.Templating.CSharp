@@ -3,12 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chryssie.CodeAnalysis.Templating.CSharp", "Chryssie.CodeAnalysis.Templating.CSharp\Chryssie.CodeAnalysis.Templating.CSharp.csproj", "{539DCD92-8051-4CA0-8088-3B090159B9F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chryssie.CodeAnalysis.Templating.CSharp", "Chryssie.CodeAnalysis.Templating.CSharp\Chryssie.CodeAnalysis.Templating.CSharp.csproj", "{539DCD92-8051-4CA0-8088-3B090159B9F5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{25F45926-9432-448D-A87C-D86D5054ADFE}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chryssie.CodeAnalysis.Templating.CSharp.UnitTests", "Chryssie.CodeAnalysis.Templating.CSharp.UnitTests\Chryssie.CodeAnalysis.Templating.CSharp.UnitTests.csproj", "{37801631-5F33-46D5-819F-F32644E8BDAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestParsing", "TestParsing\TestParsing.csproj", "{E2ECFD64-6D1A-4701-8776-854B901EC89B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,14 @@ Global
 		{539DCD92-8051-4CA0-8088-3B090159B9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{539DCD92-8051-4CA0-8088-3B090159B9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{539DCD92-8051-4CA0-8088-3B090159B9F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37801631-5F33-46D5-819F-F32644E8BDAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37801631-5F33-46D5-819F-F32644E8BDAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37801631-5F33-46D5-819F-F32644E8BDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37801631-5F33-46D5-819F-F32644E8BDAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2ECFD64-6D1A-4701-8776-854B901EC89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2ECFD64-6D1A-4701-8776-854B901EC89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2ECFD64-6D1A-4701-8776-854B901EC89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2ECFD64-6D1A-4701-8776-854B901EC89B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
